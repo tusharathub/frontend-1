@@ -26,8 +26,6 @@ const tlDiscover = gsap.timeline({
         start: "top top",
         end: "+=3000", 
         scrub: 1,
-        // snap: 1 / (document.querySelectorAll(".slide").length - 1), // Snap to slides
-        // ease: "none"
     }
 });
 
@@ -112,7 +110,7 @@ sections.forEach((section, i) => {
 
 // update heading based on index 
 function updateHeading(index) {
-    const headingTexts = ["furniture", "Decoration", "christmas", "vegas"]
+    const headingTexts = ["Wild-Life", "Mountains"]
     heading.textContent = headingTexts[index];
 }
 

@@ -8,7 +8,7 @@ body{
     height: 100%;
     background-color: #50586C;
     font-optical-sizing: auto;
-    transition: all 1s;
+    transition: all 1s; 
 }
 
 a{
@@ -31,7 +31,7 @@ a{
     z-index: 100;
     text-align: center;
     color: #DCE2F0;
-    background-color: 50586C;
+    background-color: #50586C;
 }
 
 .stickyNav{
@@ -44,78 +44,80 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 2rem;
-    border-bottom: 2px solid black;
+    padding: 2rem; 
+    border-bottom: 1px solid rgba(212, 218, 232, 0.2); 
     color: #DCE2F0;
-    /* margin: 10 2rem; */
+    margin: 0 2rem; 
 }
 
 ul{
     display: flex;
-    gap: 1rem;
+    gap: 1rem; 
     list-style: none;
 }
 
 li a{
     color: #DCE2F0;
     text-transform: uppercase;
-    font-size: 1.5vw;
-    letter-spacing: 1px;
-    font-weight: 500;
+    font-size: 25px; 
+    font-weight: 400;
     transition: color 0.3s ease-in-out;
 
     &:hover{
-        color: black;
+        color: gray; 
     }
 }
 
 .site-title{
-    font-size: 1.7vw;
+    font-size: 30px;
     font-weight: 700;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
 }
 
 .copy-right{
     text-transform: uppercase;
-    font-size: 1.9vw;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 400;
+    color: #a8dadc;
 }
 
 #discover{
     display: flex;
-    /* justify-content: center; */
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    padding-top: 80px; 
+    min-height: calc(100vh - 60px); 
+    align-items: center; 
 }
 
 #container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 90rem;
+    margin-top: 0; 
     text-align: center;
 }
 
 .slide{
-    width: 60vw;
-    max-width: 60vw;
+    width: 80vw; 
+    max-width: 80vw;
     margin: 10px;
     overflow: hidden;
 }
 
 .slide h1{
     display: block;
-    font-size: 11vw;
+    font-size: 6.9rem;
     font-weight: 700;
     color: #DCE2F0;
-    letter-spacing: -10px;
-    line-height: 0.8;
+    letter-spacing: -5px;
+    line-height: 0.9;
+    opacity: 0.8;
 }
 
 #differentFont{
     font-weight: 300;
     font-style: italic;
+    opacity: 0.7;
 }
 
 .cover{
@@ -137,6 +139,7 @@ li a{
     display: flex;
     justify-content: center;
     margin-top: 5rem;
+    
 }
 
 #tag-section .container{
@@ -146,10 +149,13 @@ li a{
     gap: 1rem;
     align-items: center;
     width: 100rem;
+
 }
 
+
+
 #tag-section span{
-    font-size: clamp(1.5rem, 3vw, 4rem);
+    font-size: 2.8rem;
     font-weight: 600;
     letter-spacing: -1px;
     color: #DCE2F0;
@@ -157,6 +163,12 @@ li a{
     border: 1px solid black;
     padding: 1rem 4rem;
     border-radius: 100vw;
+    transition: 0.4s ease-in;
+
+    &:hover{
+        color: white;
+        background-color: gray;
+    }
 }
 
 #furniture-section{
@@ -204,7 +216,7 @@ li a{
                     & :nth-child(2){
                          aspect-ratio: 1/1.2;
                          flex-basis: 100px;
-                         transform: translateY(40%);
+                         transform: translateY(80%);
                     }
                     & :nth-child(3){
                          aspect-ratio: 1/1.2;
